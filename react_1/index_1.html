@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./index_1.css" >
+</head>
+<body>
+
+
+     <!-- create a heading hello world using html -->
+
+   <!-- <div id="root">
+    <h1>Hello World </h1>
+   </div> -->
+    
+  <!-- ================================================================================================================================= -->
+  
+  <!-- create a heading hello world using Javascript -->
+   <!-- Inject the heading tag inside the root div -->
+
+   <!-- <div id="root"></div>
+
+   <script>
+
+    const heading = document.createElement('h1') ;
+    heading.innerHTML = " Hello world from javascript" ;
+
+    const parent = document.getElementById('root') ;
+    parent.appendChild(heading) ;
+
+   </script> -->
+
+   <!-- ================================================================================================================================= -->
+
+   <!-- create a heading hello world using React -->
+
+   <!-- With the help of the cdn react links our project will be able to use the feature and understand react -->
+
+   <!-- <div id="root"></div>
+
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+   <script>
+      
+      // Step 1 ) Create react element ( core react)
+     const heading = React.createElement('h1' , {} , " Hello world from React!" ) ;
+     // React.createElement() => takes three input arguments
+   //   ( tag you want to create  ,  object  ,  Content we want to inject inside the tag)
+
+    // Step 2 ) Create react element ( Here since we want to render or inject the data or element into the root element so therefore we are manipulating the DOM structure so therefore we need reactDOM
+
+    const root = ReactDOM.createRoot( document.getElementById('root') ) ;
+
+    // root => The route is created inside the react , In the root all the react codes , injected codes will be run
+    
+    // Step 3 ) Now render or inject the heading tag inside the root element 
+
+    root.render(heading) ;
+
+   </script> -->
+
+    <!-- ================================================================================================================================= -->
+
+    <!-- Create app.js and place all the javascript code inside that file and link with the html page -->
+     
+    <h1>" Hello from top "</h1>
+
+    <div id="root">
+        <h1>" Cricket is a game "</h1>
+        <h1>" Cricket is a game "</h1>
+        <h1>" Cricket is a game "</h1>
+        <h1>" Cricket is a game "</h1>
+        <h1>" Cricket is a game "</h1>
+        <h1>" Cricket is a game "</h1>
+    </div>     
+    
+    <h1>" Hello from bottom "</h1>
+    
+    <!-- If there is nothing inside the div tag , then automatically the script tag will be printed , else if there is something inside the script tag , then the render() inside script tag will ( override or replace it , not append ) print in the website render() -->
+
+    <!-- Refresh the page very fast -->
+
+    <!-- So here the compiler will read the HTML code line by line and will print the div tag content in present in the HTML page as soon as it reaches the script tag So it will load react , reactDOM in our app And when it reaches app.js and render() So it will include all the object inside my root element present in the html page -->
+
+    <!-- Here hello from top and hello from bottom h1 tags will not be rendered , Because react is applied only to the div tag -->
+ 
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="./app_1.js" ></script>
+</body>
+</html> 
+
+<!-- If we put app.js script above the two react cdn links then it will throw error => React is not defined
+Therefore we have to maintain the order of the cdn links as well as the App.js , Because our app.js file is using the react and react dom therefore we have to maintain the 
+
+Q ) what is cross origin in React CDN links ?
+
+Ans )In easy terms, CORS (Cross Origin Resource Sharing) is like a handshake between your website and CDN (could be other servers as well), saying it's okay to load resources from each other. It acts as a security check to prevent malicious scripts from loading unauthorized resources. -->
+
