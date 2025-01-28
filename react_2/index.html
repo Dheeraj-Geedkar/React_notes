@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1> Before root element </h1>
+
+     <div id = "root">
+        <h1> Dheeraj is here </h1> 
+        <h1> Dheeraj is here </h1>
+        <h1> Dheeraj is here </h1>
+        <h1> Dheeraj is here </h1>
+     </div>    <!--  injecting Heading tag from javascript  -->  
+
+     <h1> After root element </h1>
+     
+     <!--  In App.js We have written the heading code which would be injected into the html div tag (root) , But if we write already a text in heading tags in html index page so , the code written in javascript Using render method  will replace or  override the code written in html page-->
+
+      <!-- The compiler is reading the html code line by line so first it prints the div H1 tag in the web page and then it loads the react script files then it load the app.js and inside it After creating the react elements and the render method it override or replace the code written to display on the web page and this takes only milliseconds to replace while refreshing the page-->
+      
+       <!-- Here the heading tags of before root element after root element will not be affected by the react code because the react code or the javascript library code is Working inside the div root only And the rest of the html codes will remain the same--> 
+
+    <script type = "module" src="./app.js">
+         </script>
+   
+
+</body>
+</html>

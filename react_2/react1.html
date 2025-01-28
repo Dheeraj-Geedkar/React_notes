@@ -1,0 +1,98 @@
+
+<!--  Task 1   create hello world program heading using simple html -->  <!--   practise   page      -->  
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <h1>Hello world! </h1>             
+    </div>
+</body>
+</html>
+-->
+
+<!--  ************************************************************* -->
+
+<!--  Task 2   create hello world heading using javascript by injecting heding tag in JS -->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div id = "root"> </div>    //   injecting Heading tag from javascript
+    
+    <script>
+         
+        => create h1 tage using JS 
+
+        const heading = document.createElement("h1") ;  // creates Element inside javascript
+        heading.innerHTML= "Hello world! from js ! " ;  // put value inside html element
+
+       => put heading variable  inside div tag ( id = root ) 
+
+       const root = document.getElementById("root") ;
+       root.appendChild(heading) ;
+
+    </script>
+
+</body>
+</html>
+
+--> 
+
+
+<!--  ************************************************************* -->
+
+<!--  Task 3  create hello world program heading using react -->  <!----> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+     <div id = "root"> </div>    <!--  injecting Heading tag from javascript  -->  
+     
+      => comments
+
+          => cdn links 
+
+     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <script>
+         
+          // creates Element inside javascript
+
+        const heading = React.createElement("h1" , {} , " Hello world! from  React!  ") ;  // step 1 creates Element inside javascript
+         // 3 input parametrs ( which element to Create , Object , What do you want to do with the element )
+
+          // put value inside html element
+
+       // step 2 create root Element inside react
+       const root = ReactDOM.createRoot(document.getElementById("root") );
+
+       root.render(heading) ;  // step 3 inject h1 tag to root  inside react
+
+    </script>
+
+</body>
+</html>
+
+
+<!--  ************************************************************* -->
