@@ -1,0 +1,6 @@
+// Do   ( terminal )
+
+npm init          =>   package.json 
+
+npm install -D parcel  =>  package-lock.json
+
