@@ -1,6 +1,23 @@
+// create our own react app from basics
+
+//========================================================================================
+
 // Do   ( terminal )
 
 npm init          =>   package.json 
 
-npm install -D parcel  =>  package-lock.json
+npm install -D parcel  =>  package-lock.json  // Install parcel package
 
+npx parcel index.html  =>  parcel_cache  ,  dist folder    // Execution of package With a source file 
+                                                          //  dev build of our project
+
+npm install react
+
+npm install react-dom
+
+npx parcel build index.html      // Production build of our project 
+
+// =================================================================
+
+
+delete inside package.json ( main : app.js ) to remove error 
