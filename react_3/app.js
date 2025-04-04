@@ -12,6 +12,9 @@ import React from "react" ;
 // Core React just creates the element
 // Below line create react element using react
 const heading  = React.createElement('h1' , { id:'heading'} , ' Namaste Dheeraj') ;  
+//      |
+//      \/
+//   React Element      
 // this line just created an object
 
 // i/p parameter => 1 ) Tag which we want to create
@@ -83,6 +86,12 @@ const TitleComponent = () => {                               // preferred standa
            return <h1>Namaste from functional component </h1>
    }
 */
+
+// or
+
+// const HeadingComponent = () => (
+//    <h1>Namaste from functional component </h1>
+// ) ;
 
 //****    create nested React functional component
 
